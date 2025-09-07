@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Download, Menu } from "lucide-react";
+import icon from "@/assets/icon.png"
 import { useState } from "react";
 
 export const Navigation = () => {
@@ -31,9 +32,12 @@ export const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">H</span>
-            </div>
+            <img
+              src={icon}
+              alt="HabitMentor Logo"
+              className="w-8 h-8 rounded-lg object-cover shadow"
+              style={{ background: 'linear-gradient(to right, var(--tw-gradient-stops))' }}
+            />
             <span className="text-xl font-bold">HabitMentor AI</span>
             <Badge className="hidden sm:block bg-primary/10 text-primary text-xs px-2 py-1">
               Free Forever

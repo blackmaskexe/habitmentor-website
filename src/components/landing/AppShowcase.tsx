@@ -104,22 +104,11 @@ export const AppShowcase = () => {
                 transition={{ duration: 0.3 }}
               >
                 <div className="relative">
-                  <motion.div
-                    className={`absolute inset-0 bg-gradient-to-r ${item.gradient} opacity-20 rounded-3xl blur-xl`}
-                    animate={{ 
-                      scale: [1, 1.05, 1],
-                      opacity: [0.2, 0.3, 0.2]
-                    }}
-                    transition={{ 
-                      duration: 4,
-                      repeat: Infinity,
-                      repeatType: "reverse"
-                    }}
-                  />
+                  {/* Removed colored halo/blurred gradient background */}
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="relative z-10 w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
+                    className="relative z-10 w-full max-w-xs mx-auto rounded-2xl shadow-2xl"
                   />
                 </div>
               </motion.div>
