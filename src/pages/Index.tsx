@@ -9,21 +9,21 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <main>
-        <Hero />     <section id="showcase">
+        <Hero />
+        <section id="showcase">
           <AppShowcase />
         </section>
-        <section id="features">
+        {/* <section id="features">
           <Features />
-        </section>
-   
-        <section id="testimonials">
+        </section> */}
+        {/* <section id="testimonials">
           <Testimonials />
-        </section>
+        </section> */}
         <CTA />
       </main>
-      
+
       <footer className="bg-secondary/20 py-8 px-4">
         <div className="container max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -33,7 +33,7 @@ const Index = () => {
             <span className="text-lg font-semibold">HabitMentor AI</span>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2024 HabitMentor AI. Built with ❤️ for habit builders worldwide.
+            Built with ❤️ for habit builders worldwide.
           </p>
         </div>
       </footer>

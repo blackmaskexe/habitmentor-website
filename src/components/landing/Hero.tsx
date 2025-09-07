@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Smartphone, Download } from "lucide-react";
-import appDashboard from "@/assets/mockups/app-dashboard.png";
+import appShowcase from "@/assets/mockups/app-showcase.png";
 
 export const Hero = () => {
   return (
@@ -18,16 +16,6 @@ export const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            <Badge className="mb-4 px-4 py-2 text-sm font-medium bg-primary/10 text-primary hover:bg-primary/20">
-              Free, Forever! 🎉
-            </Badge>
-          </motion.div>
-
           <motion.h1
             className="text-4xl lg:text-6xl font-bold leading-tight"
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +26,7 @@ export const Hero = () => {
               HabitMentor AI
             </span>
             <br />
-            Your AI mentor for building habits that last a lifetime.
+            Your AI Mentor to make life-long habits.
           </motion.h1>
 
           <motion.p
@@ -47,9 +35,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Stop struggling with habit consistency. Let our intelligent AI learn
-            your patterns and provide personalized recommendations that actually
-            work.
+            Build better habits with personalized AI guidance.
           </motion.p>
 
           <motion.div
@@ -83,25 +69,9 @@ export const Hero = () => {
             </Button>
           </motion.div>
 
-          <motion.div
-            className="flex items-center justify-center lg:justify-start gap-8 text-sm text-muted-foreground"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-          >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full" />
-              No Subscriptions
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full" />
-              AI-Powered
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full" />
-              Social Features
-            </div>
-          </motion.div>
+          <div className="text-muted-foreground text-base mt-2">
+            No subscriptions. Just better habits.
+          </div>
         </motion.div>
 
         {/* Right Content - App Mockup */}
@@ -125,11 +95,9 @@ export const Hero = () => {
               }}
             />
             <motion.img
-              src={appDashboard}
+              src={appShowcase}
               alt="HabitMentor AI App Dashboard"
-              className="relative z-10 max-w-sm sm:max-w-md w-full rounded-2xl shadow-2xl"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+              className="relative z-10 max-w-sm sm:max-w-md w-full rounded-2xl transition-transform duration-500 lg:scale-150 lg:origin-center lg:hover:scale-[1.6]"
             />
           </div>
         </motion.div>
