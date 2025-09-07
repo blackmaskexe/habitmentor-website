@@ -9,19 +9,19 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    --foreground: 210 17% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 210 17% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 210 17% 10%;
 
     --primary: 211 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 94%;
-    --secondary-foreground: 0 0% 20%;
+    --secondary-foreground: 210 17% 20%;
 
     --muted: 0 0% 94%;
     --muted-foreground: 0 0% 45%;
@@ -29,13 +29,16 @@ All colors MUST be HSL.
     --accent: 211 100% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 4 90% 58%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 91%;
+    --border: 141 84% 93%;
     --input: 0 0% 96%;
     --ring: 211 100% 50%;
 
+    --surface: 0 0% 94%;
+    --alt-background: 0 0% 93%;
+    
     --gradient-hero: linear-gradient(135deg, hsl(211, 100%, 50%), hsl(211, 100%, 60%));
     --gradient-feature: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
     --shadow-soft: 0 4px 20px -4px hsl(211, 100%, 50%, 0.15);
@@ -61,36 +64,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 96%;
+    --background: 210 11% 8%;
+    --foreground: 210 6% 96%;
 
-    --card: 0 0% 15%;
-    --card-foreground: 0 0% 96%;
+    --card: 210 6% 15%;
+    --card-foreground: 210 6% 96%;
 
-    --popover: 0 0% 15%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 210 6% 15%;
+    --popover-foreground: 210 6% 96%;
 
     --primary: 9 100% 64%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 17%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 210 6% 17%;
+    --secondary-foreground: 210 6% 96%;
 
-    --muted: 0 0% 17%;
-    --muted-foreground: 0 0% 47%;
+    --muted: 210 6% 17%;
+    --muted-foreground: 217 10% 47%;
 
     --accent: 9 100% 64%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 91% 71%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 24%;
     --input: 0 0% 21%;
     --ring: 9 100% 64%;
 
+    --surface: 210 6% 17%;
+    --alt-background: 210 6% 16%;
+
     --gradient-hero: linear-gradient(135deg, hsl(9, 100%, 64%), hsl(9, 100%, 70%));
-    --gradient-feature: linear-gradient(180deg, hsl(0, 0%, 8%), hsl(0, 0%, 10%));
+    --gradient-feature: linear-gradient(180deg, hsl(210, 11%, 8%), hsl(210, 6%, 10%));
     --shadow-soft: 0 4px 20px -4px hsl(9, 100%, 64%, 0.2);
     --shadow-hover: 0 8px 40px -8px hsl(9, 100%, 64%, 0.3);
     --sidebar-background: 240 5.9% 10%;
@@ -107,6 +113,7 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   }
 
   body {

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Download, Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -63,6 +64,7 @@ export const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <Button className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300">
               <Download className="mr-2 h-4 w-4" />
               Download App
@@ -108,7 +110,11 @@ export const Navigation = () => {
               >
                 Reviews
               </button>
-              <div className="px-4 pt-2">
+              <div className="px-4 pt-2 space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium">Theme</span>
+                  <ThemeToggle />
+                </div>
                 <Button className="w-full bg-primary hover:bg-primary/90">
                   <Download className="mr-2 h-4 w-4" />
                   Download App
