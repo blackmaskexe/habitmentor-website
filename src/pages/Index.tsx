@@ -1,12 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navigation } from "@/components/landing/Navigation";
+import { Hero } from "@/components/landing/Hero";
+import { Features } from "@/components/landing/Features";
+import { AppShowcase } from "@/components/landing/AppShowcase";
+import { Testimonials } from "@/components/landing/Testimonials";
+import { CTA } from "@/components/landing/CTA";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      
+      <main>
+        <Hero />
+        <section id="features">
+          <Features />
+        </section>
+        <section id="showcase">
+          <AppShowcase />
+        </section>
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+        <CTA />
+      </main>
+      
+      <footer className="bg-secondary/20 py-8 px-4">
+        <div className="container max-w-6xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xs">H</span>
+            </div>
+            <span className="text-lg font-semibold">HabitMentor AI</span>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            © 2024 HabitMentor AI. Built with ❤️ for habit builders worldwide.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
