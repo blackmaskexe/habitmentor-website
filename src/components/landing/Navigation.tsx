@@ -69,7 +69,15 @@ export const Navigation = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
-            <Button className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button
+              className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => {
+                const footer = document.querySelector('footer');
+                if (footer) {
+                  footer.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <Download className="mr-2 h-4 w-4" />
               Download App
             </Button>
@@ -119,7 +127,15 @@ export const Navigation = () => {
                   <span className="text-sm font-medium">Theme</span>
                   <ThemeToggle />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90">
+                <Button
+                  className="w-full bg-primary hover:bg-primary/90"
+                  onClick={() => {
+                    const footer = document.querySelector('footer');
+                    if (footer) {
+                      footer.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
                   <Download className="mr-2 h-4 w-4" />
                   Download App
                 </Button>

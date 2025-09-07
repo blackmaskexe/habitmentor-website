@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Smartphone, Download, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export const CTA = () => {
   return (
@@ -90,7 +90,7 @@ export const CTA = () => {
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-6 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
             >
-              <Smartphone className="mr-3 h-6 w-6" />
+              <ion-icon name="logo-apple" class="mr-3 h-6 w-6" style={{fontSize: '1.5rem', verticalAlign: 'middle'}}></ion-icon>
               Download for iOS
             </Button>
             <Button 
@@ -98,7 +98,7 @@ export const CTA = () => {
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 text-lg px-10 py-6 backdrop-blur-sm hover:scale-105 transition-all duration-300"
             >
-              <Download className="mr-3 h-6 w-6" />
+              <ion-icon name="logo-google-playstore" class="mr-3 h-6 w-6" style={{fontSize: '1.5rem', verticalAlign: 'middle'}}></ion-icon>
               Get on Android
             </Button>
           </motion.div>

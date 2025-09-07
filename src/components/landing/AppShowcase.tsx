@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Users, BarChart3 } from "lucide-react";
-import appChat from "@/assets/app-chat.png";
-import appSocial from "@/assets/app-social.png";
-import appDashboard from "@/assets/app-dashboard.png";
+import appChat from "@/assets/mockups/app-chat.png";
+import appSocial from "@/assets/mockups/app-social.png";
+import appDashboard from "@/assets/mockups/app-dashboard.png";
 
 const showcaseItems = [
   {
