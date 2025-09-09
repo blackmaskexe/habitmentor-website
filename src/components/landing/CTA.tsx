@@ -86,17 +86,24 @@ export const CTA = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <Button
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-6 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+            <a
+              href="https://testflight.apple.com/join/cNdH24Fw"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <ion-icon
-                name="logo-apple"
-                class="mr-3 h-6 w-6"
-                style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
-              ></ion-icon>
-              Download for iOS
-            </Button>
+              <Button
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-6 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+              >
+                <ion-icon
+                  name="logo-apple"
+                  class="mr-3 h-6 w-6"
+                  style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
+                ></ion-icon>
+                Download for iOS
+              </Button>
+            </a>
+
             {/* <Button
               size="lg"
               variant="outline"

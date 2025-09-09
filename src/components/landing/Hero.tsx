@@ -51,17 +51,23 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            <Button
-              size="lg"
-              className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            <a
+              href="https://testflight.apple.com/join/cNdH24Fw"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <ion-icon
-                name="logo-apple"
-                class="mr-3 h-6 w-6"
-                style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
-              ></ion-icon>
-              Download for iOS
-            </Button>
+              <Button
+                size="lg"
+                className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <ion-icon
+                  name="logo-apple"
+                  class="mr-3 h-6 w-6"
+                  style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
+                ></ion-icon>
+                Download for iOS
+              </Button>
+            </a>
 
             <Modal>
               <ModalTrigger>
