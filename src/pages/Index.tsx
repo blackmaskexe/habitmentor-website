@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/landing/Navigation";
 import { Hero } from "@/components/landing/Hero";
-import { Features } from "@/components/landing/Features";
 import { AppShowcase } from "@/components/landing/AppShowcase";
 import { CTA } from "@/components/landing/CTA";
 

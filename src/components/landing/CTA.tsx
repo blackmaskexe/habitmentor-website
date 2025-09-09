@@ -97,7 +97,7 @@ export const CTA = () => {
               ></ion-icon>
               Download for iOS
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 text-lg px-10 py-6 backdrop-blur-sm hover:scale-105 transition-all duration-300"
@@ -108,7 +108,7 @@ export const CTA = () => {
                 style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
               ></ion-icon>
               Get on Android
-            </Button>
+            </Button> */}
           </motion.div>
 
           <motion.div

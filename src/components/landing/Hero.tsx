@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import appShowcase from "@/assets/mockups/app-showcase.png";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../ui/animated-modal";
 
 export const Hero = () => {
   return (
@@ -55,18 +62,52 @@ export const Hero = () => {
               ></ion-icon>
               Download for iOS
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-6 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
-            >
-              <ion-icon
-                name="logo-google-playstore"
-                class="mr-3 h-6 w-6"
-                style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
-              ></ion-icon>
-              Get on Android
-            </Button>
+
+            <Modal>
+              <ModalTrigger>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-6 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
+                >
+                  <ion-icon
+                    name="logo-google-playstore"
+                    class="mr-3 h-6 w-6"
+                    style={{ fontSize: "1.5rem", verticalAlign: "middle" }}
+                  ></ion-icon>
+                  Get on Android
+                </Button>
+              </ModalTrigger>
+              <ModalBody>
+                <ModalContent className="flex flex-1 h-full items-center justify-center">
+                  <div className="flex flex-col items-center justify-center text-center w-full">
+                    <h2 className="text-xl font-semibold mb-2">
+                      Android Version Unavailable
+                    </h2>
+                    <p className="text-base text-muted-foreground mb-4">
+                      The Android version of HabitMentor AI is currently
+                      unsupported.
+                      <br />
+                      The developer is looking for people to test the app on
+                      Android devices.
+                      <br />
+                      If you want to see the app on Android or are interested in
+                      testing, please contact the developer!
+                    </p>
+                  </div>
+                </ModalContent>
+                <ModalFooter>
+                  <div className="w-full flex justify-center pb-2">
+                    <a
+                      href="mailto:contact@prathamsnehi.com"
+                      className="inline-block px-6 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition"
+                    >
+                      Contact Developer
+                    </a>
+                  </div>
+                </ModalFooter>
+              </ModalBody>
+            </Modal>
           </motion.div>
 
           <div className="text-muted-foreground text-base mt-2">
