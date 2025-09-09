@@ -4,7 +4,7 @@ import appShowcase from "@/assets/mockups/app-showcase.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
 
@@ -83,7 +83,7 @@ export const Hero = () => {
         >
           <div className="relative">
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-3xl"
+              className="absolute inset-0 rounded-3xl blur-3xl"
               animate={{
                 scale: [1, 1.1, 1],
                 opacity: [0.3, 0.5, 0.3],
