@@ -87,7 +87,7 @@ export const CTA = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <a
-              href="https://testflight.apple.com/join/cNdH24Fw"
+              href="https://apps.apple.com/us/app/habitmentor-ai/id6745747475"
               target="_blank"
               rel="noopener noreferrer"
             >

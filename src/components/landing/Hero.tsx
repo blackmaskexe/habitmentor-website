@@ -46,15 +46,16 @@ export const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             <a
-              href="https://testflight.apple.com/join/cNdH24Fw"
+              href="https://apps.apple.com/us/app/habitmentor-ai/id6745747475"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-block"
             >
               <Button
                 size="lg"
@@ -70,7 +71,7 @@ export const Hero = () => {
             </a>
 
             <Modal>
-              <ModalTrigger>
+              <ModalTrigger className="inline-block">
                 <Button
                   variant="outline"
                   size="lg"
