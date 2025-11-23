@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.blackmaskexe.habittracker",
+      "sha256_cert_fingerprints": [
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+        "DC:AD:28:F1:56:60:36:C0:85:BB:F0:75:E7:F4:6C:7D:5C:03:37:2B:90:91:DA:82:47:AE:82:38:66:38:57:D0"
+      ]
+    }
+  }
+]
